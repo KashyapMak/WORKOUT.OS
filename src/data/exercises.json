@@ -1,0 +1,3935 @@
+[
+  {
+    "id": "barbell_squat",
+    "name": "Barbell Back Squat",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Lower Back",
+      "Core"
+    ],
+    "equipment": [
+      "Barbell",
+      "Squat rack",
+      "Weight plates"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Squat",
+      "Strength"
+    ],
+    "injuryRestrictions": [
+      "Knee",
+      "Lower Back",
+      "Hip"
+    ],
+    "contraindications": [
+      "Severe Knee Pain",
+      "Severe Lower Back Pain",
+      "Herniated disc",
+      "Meniscus damage"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "4 x 8",
+      "advanced": "5 x 5"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "3-6",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Athletic Performance": "5-8"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 180,
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Athletic Performance": 120
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0043-qXTaZnJ.gif",
+    "instructions": [
+      "Set the barbell just below shoulder height in the squat rack, and load with weight plates.",
+      "Step under the bar, resting it across your upper back/traps. Grip the bar firmly.",
+      "Unrack the bar and take one step back with each foot. Position feet slightly wider than shoulder-width.",
+      "Inhale, engage your core, and initiate the movement by pushing your hips back and bending your knees.",
+      "Lower yourself until your thighs are parallel to the floor or lower, keeping your spine neutral and knees tracking over toes.",
+      "Drive through your heels to return to the starting position. Exhale as you press up."
+    ],
+    "formTips": [
+      "Keep your chest upright and avoid rounding your lower back.",
+      "Never let your knees cave inward; actively push them outward.",
+      "Keep your heels flat on the floor throughout the movement."
+    ],
+    "alternatives": [
+      "goblet_squat",
+      "leg_press",
+      "box_squat",
+      "bodyweight_squat",
+      "dumbbell_squat"
+    ]
+  },
+  {
+    "id": "goblet_squat",
+    "name": "Dumbbell Goblet Squat",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Core",
+      "Upper Back"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Kettlebell"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Fat Loss",
+      "General Fitness",
+      "Endurance"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Squat",
+      "Beginner Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "8-12",
+      "General Fitness": "12-15",
+      "Fat Loss": "12-15",
+      "Endurance": "15-20"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 90,
+      "Muscle Gain": 75,
+      "General Fitness": 60,
+      "Fat Loss": 45,
+      "Endurance": 45
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1760-yn8yg1r.gif",
+    "instructions": [
+      "Hold a dumbbell vertically by one end, cupping your hands under the weight head at chest height.",
+      "Keep your elbows tucked in close to your body.",
+      "Set feet shoulder-width apart, toes flared slightly out.",
+      "Lower into a squat by pushing your hips back, keeping your chest tall and dumbbell close to your sternum.",
+      "Go down until your elbows touch the inside of your knees (parallel thigh depth).",
+      "Push back up to standing by driving through your mid-foot."
+    ],
+    "formTips": [
+      "Keep the weight pressed tight against your chest to prevent leaning forward.",
+      "Focus on dropping your hips straight down between your heels."
+    ],
+    "alternatives": [
+      "box_squat",
+      "bodyweight_squat",
+      "leg_press",
+      "step_up"
+    ]
+  },
+  {
+    "id": "leg_press",
+    "name": "Machine Leg Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Calves"
+    ],
+    "equipment": [
+      "Leg press machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness"
+    ],
+    "tags": [
+      "Compound",
+      "Machine",
+      "Lower Body",
+      "Squat"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Knee Pain",
+      "Severe Hip mobility restriction"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "10-12",
+      "General Fitness": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 120,
+      "Muscle Gain": 90,
+      "General Fitness": 60
+    },
+    "instructions": [
+      "Sit in the leg press machine and place your feet shoulder-width apart on the center of the sled.",
+      "Lower the safety keys and grasp the handles on the sides.",
+      "Slowly bend your knees to lower the sled toward your chest until your knees are at about a 90-degree angle.",
+      "Avoid letting your lower back or tailbone lift off the padded seat.",
+      "Push through your mid-foot/heels to press the sled back to the starting position without locking your knees."
+    ],
+    "formTips": [
+      "Never fully lock out or hyperextend your knees at the top.",
+      "Ensure your lower back stays firmly pinned against the backrest throughout."
+    ],
+    "alternatives": [
+      "goblet_squat",
+      "box_squat",
+      "bodyweight_squat"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0739-10Z2DXU.gif"
+  },
+  {
+    "id": "box_squat",
+    "name": "Dumbbell Box Squat",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes",
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Core",
+      "Lower Back"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Weight Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Lower Body",
+      "Squat",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "3 x 15"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Mobility Improvement": "12-15",
+      "Rehabilitation": "8-10"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Mobility Improvement": 60,
+      "Rehabilitation": 90
+    },
+    "instructions": [
+      "Place a sturdy box or flat bench behind you.",
+      "Hold dumbbells at your sides or a single dumbbell at chest height.",
+      "Lower yourself slowly into a squat, keeping your hips tracking backwards until your glutes gently touch the box.",
+      "Pause for a split second on the box without completely releasing body tension or slumping.",
+      "Drive back up to a standing position by contracting your glutes and quads."
+    ],
+    "formTips": [
+      "Touch the box lightly; do not sit back fully and lose muscle engagement.",
+      "Ensure your knees track in line with your toes, preventing them from wobbling."
+    ],
+    "alternatives": [
+      "goblet_squat",
+      "bodyweight_squat",
+      "glute_bridge"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0026-W9pFVv1.gif"
+  },
+  {
+    "id": "bodyweight_squat",
+    "name": "Bodyweight Air Squat",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Core"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Endurance"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Lower Body",
+      "Squat",
+      "Beginner Friendly",
+      "Warm-Up"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Wrist",
+      "Shoulder"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 20",
+      "advanced": "4 x 25"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Fat Loss": "15-20",
+      "Mobility Improvement": "10-15",
+      "Rehabilitation": "8-12",
+      "Endurance": "20-30"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Fat Loss": 30,
+      "Mobility Improvement": 60,
+      "Rehabilitation": 60,
+      "Endurance": 30
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart, chest upright, and arms in front of you.",
+      "Lower your hips down and back, maintaining a flat spine.",
+      "Go down until your thighs are parallel to the floor.",
+      "Push through your feet to return to the starting position."
+    ],
+    "formTips": [
+      "Keep your bodyweight balanced in your midfoot and heels.",
+      "Keep your core tight to support your back."
+    ],
+    "alternatives": [
+      "box_squat",
+      "glute_bridge",
+      "step_up"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3119-75Bgtjy.gif"
+  },
+  {
+    "id": "barbell_bench_press",
+    "name": "Barbell Bench Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Barbell",
+      "Bench",
+      "Weight plates"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Push",
+      "Strength"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Wrist",
+      "Elbow"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Severe Wrist Pain",
+      "Rotator cuff injury"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "4 x 8",
+      "advanced": "5 x 5"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "3-6",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 180,
+      "Muscle Gain": 90,
+      "General Fitness": 75
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0025-EIeI8Vf.gif",
+    "instructions": [
+      "Lie flat on a bench, feet firmly planted on the ground.",
+      "Grip the bar slightly wider than shoulder-width apart. Unrack the bar and hold it directly over your chest.",
+      "Lower the bar slowly under control to your mid-chest level.",
+      "Keep your elbows tucked at roughly a 45-degree angle to your torso.",
+      "Press the bar back up powerfully until arms are extended, keeping your shoulders retracted into the bench."
+    ],
+    "formTips": [
+      "Keep your shoulder blades pulled down and together (retracted).",
+      "Do not flare your elbows out to 90 degrees as this puts immense stress on the shoulders.",
+      "Ensure your wrists are neutral and stacked under the bar."
+    ],
+    "alternatives": [
+      "dumbbell_bench_press",
+      "machine_chest_press",
+      "push_up",
+      "resistance_band_chest_press"
+    ]
+  },
+  {
+    "id": "dumbbell_bench_press",
+    "name": "Dumbbell Bench Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Push",
+      "Beginner Friendly"
+    ],
+    "injuryRestrictions": [
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Fat Loss": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 120,
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Fat Loss": 45
+    },
+    "instructions": [
+      "Sit on the edge of a flat bench holding a dumbbell on each knee.",
+      "Lie back carefully, kicking the weights up to your chest level one at a time.",
+      "Position your palms facing forward (or angled slightly inward for joint comfort).",
+      "Press the weights up over your chest, keeping your shoulder blades pulled back.",
+      "Lower the dumbbells under control until they are level with your chest, feeling a stretch in the pecs.",
+      "Press them back up to the starting position."
+    ],
+    "formTips": [
+      "Angling your palms slightly inward (45 degrees) is much safer for the shoulder joint.",
+      "Control the lowering phase and do not let the dumbbells drift too wide."
+    ],
+    "alternatives": [
+      "machine_chest_press",
+      "push_up",
+      "neutral_dumbbell_press",
+      "resistance_band_chest_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0289-SpYC0Kp.gif"
+  },
+  {
+    "id": "neutral_dumbbell_press",
+    "name": "Neutral Grip Dumbbell Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Push",
+      "Rehab Friendly",
+      "Wrist Friendly"
+    ],
+    "injuryRestrictions": [
+      "Wrist",
+      "Shoulder"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 12"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Muscle Gain": "10-12",
+      "Rehabilitation": "12-15"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Muscle Gain": 90,
+      "Rehabilitation": 90
+    },
+    "instructions": [
+      "Lie back on a flat bench with dumbbells held over your chest.",
+      "Rotate your wrists so your palms are facing each other (neutral grip).",
+      "Keep your elbows tucked close to your ribcage as you lower the weights.",
+      "Press the dumbbells straight up to arm's length.",
+      "This neutral position reduces rotation and strain on both shoulder sockets and wrist joints."
+    ],
+    "formTips": [
+      "Do not let the elbows flare outward at all; keep them tracking alongside your ribcage.",
+      "Perfect for individuals with mild shoulder or wrist impingements."
+    ],
+    "alternatives": [
+      "push_up_handles",
+      "resistance_band_chest_press",
+      "incline_push_up"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0352-pP8wP2P.gif"
+  },
+  {
+    "id": "machine_chest_press",
+    "name": "Machine Chest Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Compound",
+      "Machine",
+      "Upper Body",
+      "Push",
+      "Safe"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "12-15",
+      "Rehabilitation": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Rehabilitation": 90
+    },
+    "instructions": [
+      "Adjust the seat height so the handles align with your mid-chest.",
+      "Sit back firmly, pressing your back and head into the pad.",
+      "Grasp the handles, set your feet flat on the floor.",
+      "Push the handles away from your body until your arms are extended, but do not lock your elbows.",
+      "Slowly return to the start position, feeling a stretch in the chest."
+    ],
+    "formTips": [
+      "Ensure your shoulders stay glued to the backrest; do not push your shoulders forward.",
+      "Adjust the grip for comfort - neutral handles are often available and shoulder-friendly."
+    ],
+    "alternatives": [
+      "dumbbell_bench_press",
+      "neutral_dumbbell_press",
+      "push_up"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0576-DOoWcnA.gif"
+  },
+  {
+    "id": "push_up",
+    "name": "Standard Push-Up",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders",
+      "Core"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Athletic Performance",
+      "Endurance"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Upper Body",
+      "Push",
+      "Core"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Severe Wrist Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 25"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-15",
+      "Fat Loss": "12-20",
+      "Athletic Performance": "15-20",
+      "Endurance": "20-30"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Fat Loss": 45,
+      "Athletic Performance": 60,
+      "Endurance": 45
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0662-I4hDWkc.gif",
+    "instructions": [
+      "Get into a plank position with hands slightly wider than shoulder-width and feet together.",
+      "Create a straight line from your head to your heels; engage your glutes and core.",
+      "Lower your body until your chest nearly touches the floor, keeping your elbows tucked at a 45-degree angle.",
+      "Push up through your palms to return to the starting position."
+    ],
+    "formTips": [
+      "Do not let your hips sag or your lower back arch excessively.",
+      "If you experience wrist pain, perform these on push-up handles or dumbbells to keep wrists neutral."
+    ],
+    "alternatives": [
+      "incline_push_up",
+      "push_up_handles",
+      "neutral_dumbbell_press",
+      "resistance_band_chest_press"
+    ]
+  },
+  {
+    "id": "incline_push_up",
+    "name": "Incline Push-Up",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Core"
+    ],
+    "equipment": [
+      "Bench"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "General Fitness",
+      "Rehabilitation",
+      "Weight Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Upper Body",
+      "Push",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Wrist"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "3 x 12",
+      "advanced": "3 x 15"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Rehabilitation": "8-10",
+      "Weight Loss": "12-15"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Rehabilitation": 90,
+      "Weight Loss": 45
+    },
+    "instructions": [
+      "Place your hands shoulder-width apart on an elevated surface like a bench, box, or stable table.",
+      "Step your feet back into an incline plank position, keeping your spine straight.",
+      "Lower your chest to the edge of the elevated surface under control.",
+      "Push yourself back to the starting position by extending your elbows."
+    ],
+    "formTips": [
+      "Ensure the platform is stable and will not slip.",
+      "Provides an excellent alternative for beginners who cannot do full floor push-ups, or for individuals rehabbing shoulder injuries."
+    ],
+    "alternatives": [
+      "bodyweight_squat",
+      "push_up_handles",
+      "resistance_band_chest_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0493-B1EVP9F.gif"
+  },
+  {
+    "id": "push_up_handles",
+    "name": "Push-Up on Handles/Dumbbells",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "General Fitness",
+      "Strength Development",
+      "Muscle Gain"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Upper Body",
+      "Push",
+      "Wrist Friendly"
+    ],
+    "injuryRestrictions": [
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 20"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Muscle Gain": "10-12",
+      "Strength Development": "8-10"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Muscle Gain": 75,
+      "Strength Development": 90
+    },
+    "instructions": [
+      "Place two dumbbells or push-up handles on the floor, aligned with your hands in a neutral position (palms facing each other).",
+      "Grip the handles tightly and assume a high plank position.",
+      "Lower your chest down between the handles, keeping your wrists locked straight (no bending).",
+      "Press back up to the top of the plank."
+    ],
+    "formTips": [
+      "This is a perfect cure for wrist pain, as it keeps the hand aligned with the forearm.",
+      "Maintain strict core stability; do not look down or let hips sag."
+    ],
+    "alternatives": [
+      "neutral_dumbbell_press",
+      "incline_push_up",
+      "resistance_band_chest_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0662-I4hDWkc.gif"
+  },
+  {
+    "id": "deadlift",
+    "name": "Barbell Deadlift",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Hamstrings",
+      "Glutes",
+      "Lower Back"
+    ],
+    "secondaryMuscles": [
+      "Upper Back",
+      "Lats",
+      "Forearms",
+      "Core"
+    ],
+    "equipment": [
+      "Barbell",
+      "Weight plates"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment"
+    ],
+    "difficulty": "Advanced",
+    "exerciseType": "Compound",
+    "movementPattern": "Hinge",
+    "recommendedGoals": [
+      "Strength Development",
+      "Muscle Gain",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Hinge",
+      "Posterior Chain",
+      "Strength"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Knee",
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Lower Back Pain",
+      "Herniated disc",
+      "Severe Knee Pain",
+      "Wrist Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 5",
+      "intermediate": "4 x 5",
+      "advanced": "5 x 3"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "1-5",
+      "Muscle Gain": "5-8",
+      "Athletic Performance": "3-5"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 180,
+      "Muscle Gain": 120,
+      "Athletic Performance": 120
+    },
+    "instructions": [
+      "Stand with feet hip-width apart, with your mid-foot positioned directly under the barbell.",
+      "Hinge at your hips and bend your knees slightly to grasp the bar with a shoulder-width grip.",
+      "Flatten your back completely, pull your chest up, and pull your shoulder blades down and back (engage lats).",
+      "Take a deep belly breath and brace your core.",
+      "Drive through your legs to lift the bar, keeping it scraping close to your shins, and stand up tall.",
+      "Squeeze your glutes at the top without hyperextending your lower back.",
+      "Return the bar to the floor by hinging at the hips and then bending knees once the bar clears them."
+    ],
+    "formTips": [
+      "Your spine must remain neutral; NEVER round your lower back under heavy load.",
+      "Keep the bar tight to your legs; if it drifts forward, it increases back strain.",
+      "Do not shrug or pull with your arms; they act simply as anchors."
+    ],
+    "alternatives": [
+      "romanian_deadlift",
+      "cable_pull_through",
+      "glute_bridge",
+      "bird_dog"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0032-ila4NZS.gif"
+  },
+  {
+    "id": "romanian_deadlift",
+    "name": "Dumbbell Romanian Deadlift",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Lower Back",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Hinge",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Hinge",
+      "Posterior Chain"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Lower Back Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-12",
+      "Fat Loss": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 120,
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Fat Loss": 45
+    },
+    "instructions": [
+      "Stand tall holding dumbbells in front of your thighs, palms facing your legs.",
+      "Keep feet hip-width apart, knees slightly unlocked (soft knees).",
+      "Hinge backward at your hips, sliding the dumbbells down the front of your legs.",
+      "Keep your back flat and shoulder blades squeezed together.",
+      "Go down until you feel a deep stretch in your hamstrings (usually mid-shin level).",
+      "Drive your hips forward, squeezing your glutes to return to a standing position."
+    ],
+    "formTips": [
+      "This is a hinge, not a squat. Do not bend your knees further once they are unlocked.",
+      "Keep the dumbbells close to your shins; do not let them float forward."
+    ],
+    "alternatives": [
+      "cable_pull_through",
+      "glute_bridge",
+      "dead_bug",
+      "bird_dog"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1459-rR0LJzx.gif"
+  },
+  {
+    "id": "cable_pull_through",
+    "name": "Cable Rope Pull-Through",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Lower Back",
+      "Core"
+    ],
+    "equipment": [
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Hinge",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Muscle Gain"
+    ],
+    "tags": [
+      "Compound",
+      "Machine",
+      "Lower Body",
+      "Hinge",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Mobility Improvement": "12-15",
+      "Rehabilitation": "10-12",
+      "Muscle Gain": "10-12"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Mobility Improvement": 60,
+      "Rehabilitation": 90,
+      "Muscle Gain": 75
+    },
+    "instructions": [
+      "Set a cable pulley to the lowest setting and attach a rope.",
+      "Face away from the machine, reach between your legs to hold the rope handles.",
+      "Take a few steps forward to create tension.",
+      "Assume a hip-width stance. Hinge forward at the hips, letting the cable pull your hands backwards under your hips.",
+      "Keep your back straight and knees slightly bent.",
+      "Squeeze your glutes and push your hips forward to stand back up, pulling the rope with you."
+    ],
+    "formTips": [
+      "The arms should remain straight; do not pull with your upper body.",
+      "Focus entirely on your glutes pushing forward. An excellent safe alternative to deadlifts for back issues."
+    ],
+    "alternatives": [
+      "glute_bridge",
+      "bird_dog",
+      "dead_bug"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0196-OM46QHm.gif"
+  },
+  {
+    "id": "glute_bridge",
+    "name": "Bodyweight Glute Bridge",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Core"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Hinge",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Isolation",
+      "Bodyweight",
+      "Lower Body",
+      "Posterior Chain",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Knee",
+      "Ankle"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 20",
+      "advanced": "4 x 25"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Mobility Improvement": "15-20",
+      "Rehabilitation": "10-12",
+      "Fat Loss": "15-20"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Mobility Improvement": 45,
+      "Rehabilitation": 60,
+      "Fat Loss": 30
+    },
+    "instructions": [
+      "Lie on your back on a yoga mat with knees bent and feet flat on the floor, about hip-width apart.",
+      "Keep your arms down at your sides.",
+      "Squeeze your glutes, press through your heels, and lift your hips toward the ceiling.",
+      "Avoid arching your lower back; form a straight line from your knees to your shoulders.",
+      "Pause for 2 seconds at the top, contracting your glutes firmly.",
+      "Slowly lower your hips back to the floor."
+    ],
+    "formTips": [
+      "Do not push off your shoulders; drive exclusively through your heels.",
+      "Keep your abdominal muscles braced to protect your lower back from arching."
+    ],
+    "alternatives": [
+      "bird_dog",
+      "dead_bug",
+      "cable_pull_through"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3013-u0cNiij.gif"
+  },
+  {
+    "id": "pull_up",
+    "name": "Bodyweight Pull-Up",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Lats",
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Core",
+      "Forearms"
+    ],
+    "equipment": [
+      "Pull-up bar"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment",
+      "Home Limited Equipment"
+    ],
+    "difficulty": "Advanced",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Upper Body",
+      "Pull",
+      "Core",
+      "Strength"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Elbow",
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Rotator cuff injury",
+      "Tennis elbow"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 3 (or negatives)",
+      "intermediate": "4 x 6",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "4-6",
+      "Muscle Gain": "6-10",
+      "Athletic Performance": "8-12"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 120,
+      "Muscle Gain": 90,
+      "Athletic Performance": 90
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0652-lBDjFxJ.gif",
+    "instructions": [
+      "Grasp the pull-up bar with an overhand grip (palms facing away), hands slightly wider than shoulder-width.",
+      "Hang with arms fully extended and shoulders packed down.",
+      "Inhale, brace your core, and pull your shoulder blades down and back.",
+      "Pull your body upward by driving your elbows down toward your ribs, until your chin clears the bar.",
+      "Lower yourself slowly under control back to a dead hang."
+    ],
+    "formTips": [
+      "Do not kick, swing, or kip your legs to gain momentum.",
+      "Keep your chest flared up toward the bar throughout the lift."
+    ],
+    "alternatives": [
+      "lat_pulldown",
+      "resistance_band_row",
+      "seated_cable_row",
+      "dumbbell_row"
+    ]
+  },
+  {
+    "id": "lat_pulldown",
+    "name": "Cable Lat Pulldown",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Lats",
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Forearms"
+    ],
+    "equipment": [
+      "Lat pulldown machine",
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Machine",
+      "Upper Body",
+      "Pull",
+      "Beginner Friendly"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Fat Loss": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Fat Loss": 45
+    },
+    "instructions": [
+      "Sit in the lat pulldown station and adjust the knee pads so you are locked in securely.",
+      "Grasp the wide bar with an overhand grip, hands slightly wider than shoulder-width.",
+      "Lean back slightly (10-15 degrees) and pull your shoulders down and back.",
+      "Pull the bar down to your collarbone, focusing on pulling your elbows into your side pockets.",
+      "Let the bar rise slowly back to the starting position under control, fully stretching the lats."
+    ],
+    "formTips": [
+      "Do not use momentum or rock your body back and forth to pull the weight.",
+      "Squeeze your shoulder blades together at the bottom of the rep."
+    ],
+    "alternatives": [
+      "seated_cable_row",
+      "resistance_band_row",
+      "dumbbell_row"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0198-RVwzP10.gif"
+  },
+  {
+    "id": "dumbbell_row",
+    "name": "One-Arm Dumbbell Row",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Lats",
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Rear Delts",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Pull"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Fat Loss": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 90,
+      "Muscle Gain": 75,
+      "General Fitness": 60,
+      "Fat Loss": 45
+    },
+    "instructions": [
+      "Place one knee and your same-side hand on a flat bench for support. Keep your spine flat, parallel to the bench.",
+      "Grasp a dumbbell with your opposite hand, letting it hang straight down.",
+      "Pull the dumbbell up to your hip pocket, keeping your elbow tucked close to your body.",
+      "Focus on driving your elbow back rather than pulling with your hand.",
+      "Lower the dumbbell slowly to the starting position, stretching the lat fully."
+    ],
+    "formTips": [
+      "Do not rotate your torso at the top; keep your shoulders square to the bench.",
+      "Avoid letting your shoulder socket drop out of alignment at the bottom."
+    ],
+    "alternatives": [
+      "seated_cable_row",
+      "resistance_band_row",
+      "chest_supported_row"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0292-C0MA9bC.gif"
+  },
+  {
+    "id": "chest_supported_row",
+    "name": "Dumbbell Chest Supported Row",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Upper Back",
+      "Rear Delts",
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment",
+      "Home Limited Equipment"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Compound",
+      "Upper Body",
+      "Pull",
+      "Back Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 12"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-12",
+      "Rehabilitation": "10-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Rehabilitation": 90
+    },
+    "instructions": [
+      "Set an adjustable bench to a 30-45 degree incline.",
+      "Lie face down with your chest firmly supported against the pad, feet planted on the floor.",
+      "Let dumbbells hang straight down at your sides.",
+      "Pull your shoulder blades together and row the dumbbells upwards, driving your elbows back.",
+      "Lower the weights slowly under control."
+    ],
+    "formTips": [
+      "This is the single best horizontal pull for lower back pain, as it removes spinal compression.",
+      "Keep your neck neutral; do not look up."
+    ],
+    "alternatives": [
+      "seated_cable_row",
+      "resistance_band_row",
+      "dumbbell_row"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0293-BJ0Hz5L.gif"
+  },
+  {
+    "id": "seated_cable_row",
+    "name": "Seated Cable Row",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Upper Back",
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Forearms",
+      "Core"
+    ],
+    "equipment": [
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Machine",
+      "Upper Body",
+      "Pull"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Lower Back Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "12-15",
+      "Fat Loss": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 90,
+      "General Fitness": 60,
+      "Fat Loss": 45
+    },
+    "instructions": [
+      "Sit at the cable row station, placing your feet on the platforms with knees slightly bent.",
+      "Reach forward and grasp the close-grip V-handle.",
+      "Sit back with an upright torso, shoulders pulled down and back.",
+      "Pull the handle toward your abdomen by driving your elbows back and squeezing your shoulder blades together.",
+      "Return the handle slowly to the starting position, maintaining a straight, stable spine."
+    ],
+    "formTips": [
+      "Do not lean backward or forward excessively to cheat the movement.",
+      "Keep your shoulders depressed away from your ears to prevent upper trap dominance."
+    ],
+    "alternatives": [
+      "dumbbell_row",
+      "chest_supported_row",
+      "resistance_band_row"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0861-fUBheHs.gif"
+  },
+  {
+    "id": "resistance_band_row",
+    "name": "Resistance Band Seated Row",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Upper Back",
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Core"
+    ],
+    "equipment": [
+      "Resistance bands",
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Pull",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Compound",
+      "Resistance Band",
+      "Upper Body",
+      "Pull",
+      "Beginner Friendly",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Shoulder"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 20"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Mobility Improvement": "12-15",
+      "Rehabilitation": "10-12",
+      "Fat Loss": "15-20"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Mobility Improvement": 45,
+      "Rehabilitation": 60,
+      "Fat Loss": 30
+    },
+    "instructions": [
+      "Sit on the floor with your legs extended straight in front of you.",
+      "Loop a resistance band around the soles of your feet.",
+      "Hold the handles/ends of the band in each hand with arms extended.",
+      "Sit up tall with core engaged. Pull the band back toward your torso, leading with your elbows.",
+      "Squeeze your shoulder blades together at the end of the movement.",
+      "Slowly release the tension back to the starting position."
+    ],
+    "formTips": [
+      "Ensure the band is locked securely around your feet so it cannot slip off.",
+      "If you have lower back stiffness, sit on a rolled-up towel or bend your knees slightly."
+    ],
+    "alternatives": [
+      "chest_supported_row",
+      "dumbbell_row",
+      "bird_dog"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3144-Nu7jqFE.gif"
+  },
+  {
+    "id": "resistance_band_chest_press",
+    "name": "Resistance Band Chest Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": [
+      "Resistance bands"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "General Fitness",
+      "Rehabilitation",
+      "Fat Loss"
+    ],
+    "tags": [
+      "Compound",
+      "Resistance Band",
+      "Upper Body",
+      "Push",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Wrist",
+      "Shoulder"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Rehabilitation": "10-12",
+      "Fat Loss": "12-15"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Rehabilitation": 60,
+      "Fat Loss": 30
+    },
+    "instructions": [
+      "Anchor the resistance band at chest height behind you (e.g., in a doorway or wrapped around a post).",
+      "Face away from the anchor and step forward until there is tension on the band.",
+      "Hold the handles at chest height, elbows bent and tucked.",
+      "Press the band straight forward until your arms are extended.",
+      "Return slowly to the starting position."
+    ],
+    "formTips": [
+      "Stand in a staggered stance (one foot forward) to maintain solid balance.",
+      "Keep your core tight; do not let the band pull you backward."
+    ],
+    "alternatives": [
+      "incline_push_up",
+      "neutral_dumbbell_press",
+      "push_up_handles"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/3124-4x5Okof.gif"
+  },
+  {
+    "id": "dumbbell_shoulder_press",
+    "name": "Dumbbell Overhead Shoulder Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Push"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Severe Lower Back Pain",
+      "Rotator cuff injury"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "4 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8",
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 120,
+      "Muscle Gain": 90,
+      "General Fitness": 60
+    },
+    "instructions": [
+      "Sit on an upright utility bench supporting your back.",
+      "Hold dumbbells at shoulder height with an overhand grip, elbows bent.",
+      "Press the dumbbells straight up overhead until your arms are fully extended.",
+      "Keep your back pressed firmly into the bench.",
+      "Lower the dumbbells back down slowly to shoulder height."
+    ],
+    "formTips": [
+      "Avoid letting your elbows flare directly to the side; keep them angled 30 degrees forward.",
+      "Do not arch your lower back off the bench as you press up."
+    ],
+    "alternatives": [
+      "landmine_press",
+      "face_pull",
+      "push_up",
+      "incline_push_up"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0426-A6wtbuL.gif"
+  },
+  {
+    "id": "landmine_press",
+    "name": "Single-Arm Landmine Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Shoulders",
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Triceps",
+      "Core"
+    ],
+    "equipment": [
+      "Barbell",
+      "Weight plates"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Full Equipment"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Push",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Compound",
+      "Upper Body",
+      "Push",
+      "Shoulder Friendly"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Lower Back"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Rehabilitation": "8-12",
+      "Athility Performance": "6-8"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Rehabilitation": 90,
+      "Athletic Performance": 90
+    },
+    "instructions": [
+      "Anchor one end of a barbell in a landmine attachment or wedge it safely into a corner.",
+      "Load the opposite end with weight plates.",
+      "Stand facing the bar, holding the loaded sleeve in one hand at shoulder height.",
+      "Step your foot back on the same side (staggered stance) for stability.",
+      "Press the barbell up and forward at a 45-degree angle until your arm is extended.",
+      "Lower it back down slowly under control."
+    ],
+    "formTips": [
+      "This is an excellent, safe overhead press alternative for people with shoulder impingements or poor overhead mobility.",
+      "Lean forward slightly into the bar as you press."
+    ],
+    "alternatives": [
+      "neutral_dumbbell_press",
+      "incline_push_up",
+      "push_up_handles"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0426-A6wtbuL.gif"
+  },
+  {
+    "id": "bird_dog",
+    "name": "Bodyweight Bird Dog",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Core",
+      "Lower Back"
+    ],
+    "secondaryMuscles": [
+      "Glutes",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Core / Stability",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Isolation",
+      "Bodyweight",
+      "Core",
+      "Back Friendly",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Knee",
+      "Wrist",
+      "Shoulder",
+      "Neck"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 8 per side",
+      "intermediate": "3 x 12 per side",
+      "advanced": "3 x 15 per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Mobility Improvement": "12-15",
+      "Rehabilitation": "8-10"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Mobility Improvement": 45,
+      "Rehabilitation": 60
+    },
+    "instructions": [
+      "Begin on all fours on a yoga mat: hands under shoulders, knees under hips.",
+      "Maintain a flat, neutral spine.",
+      "Slowly extend your right arm straight forward and your left leg straight backward.",
+      "Keep your hips square to the ground; do not let your back sag.",
+      "Squeeze your glutes and hold the extension for 2 seconds.",
+      "Slowly return to the starting position and repeat with the opposite arm and leg."
+    ],
+    "formTips": [
+      "Focus on length, not height. Reach your fingers forward and heel backward.",
+      "Do not arch your lower back as you lift your leg. The ultimate back rehabilitation exercise."
+    ],
+    "alternatives": [
+      "dead_bug",
+      "glute_bridge",
+      "plank"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0276-iny3m5y.gif"
+  },
+  {
+    "id": "dead_bug",
+    "name": "Bodyweight Dead Bug",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Core"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Core / Stability",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Isolation",
+      "Bodyweight",
+      "Core",
+      "Back Friendly",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Knee",
+      "Shoulder",
+      "Neck"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 10 reps",
+      "intermediate": "3 x 15 reps",
+      "advanced": "4 x 20 reps"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15",
+      "Mobility Improvement": "15-20",
+      "Rehabilitation": "8-12"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Mobility Improvement": 45,
+      "Rehabilitation": 60
+    },
+    "instructions": [
+      "Lie flat on your back on a yoga mat.",
+      "Raise your arms straight up toward the ceiling and lift your knees to a 90-degree angle (shin parallel to floor).",
+      "Flatten your lower back completely against the floor - there should be no space.",
+      "Slowly lower your right arm backward and your left leg forward until they are just above the floor.",
+      "Maintain your lower back's contact with the floor. Do not let it arch.",
+      "Return to the starting position and repeat on the opposite side."
+    ],
+    "formTips": [
+      "The entire key is keeping your lower back pressed flat into the ground.",
+      "Move slowly and with full control; do not rush the movement."
+    ],
+    "alternatives": [
+      "bird_dog",
+      "glute_bridge",
+      "plank"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0276-iny3m5y.gif"
+  },
+  {
+    "id": "plank",
+    "name": "Forearm Plank",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Core"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Glutes"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Core / Stability",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Strength Development"
+    ],
+    "tags": [
+      "Isolation",
+      "Bodyweight",
+      "Core",
+      "Isometric"
+    ],
+    "injuryRestrictions": [
+      "Wrist",
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Severe Lower Back Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 30s",
+      "intermediate": "3 x 45s",
+      "advanced": "4 x 60s"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30-45s",
+      "Fat Loss": "45-60s",
+      "Strength Development": "45-60s"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Fat Loss": 30,
+      "Strength Development": 60
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2135-VBAWRPG.gif",
+    "instructions": [
+      "Place your forearms on a yoga mat, elbows directly beneath your shoulders.",
+      "Step your feet back, lifting your knees so your weight is supported on forearms and toes.",
+      "Align your neck, shoulders, hips, and heels into a straight line.",
+      "Contract your core, squeeze your glutes, and tuck your pelvis slightly.",
+      "Hold this position, breathing steadily."
+    ],
+    "formTips": [
+      "Do not look up or let your hips sag toward the ground.",
+      "Keep your shoulders pushed active away from the floor (no collapsing in the shoulder blades)."
+    ],
+    "alternatives": [
+      "bird_dog",
+      "dead_bug",
+      "glute_bridge"
+    ]
+  },
+  {
+    "id": "face_pull",
+    "name": "Cable Face Pull",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Rear Delts",
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Rotator Cuff"
+    ],
+    "equipment": [
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Horizontal Pull",
+    "recommendedGoals": [
+      "Mobility Improvement",
+      "General Fitness",
+      "Rehabilitation",
+      "Muscle Gain"
+    ],
+    "tags": [
+      "Isolation",
+      "Machine",
+      "Upper Body",
+      "Shoulder Friendly",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "Mobility Improvement": "15-20",
+      "General Fitness": "12-15",
+      "Rehabilitation": "10-12",
+      "Muscle Gain": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Mobility Improvement": 45,
+      "General Fitness": 45,
+      "Rehabilitation": 60,
+      "Muscle Gain": 60
+    },
+    "instructions": [
+      "Set a cable pulley to upper chest/face height and attach a double-rope handle.",
+      "Grasp the rope ends with a neutral grip (thumbs facing back).",
+      "Step back to create tension and stand with feet hip-width apart.",
+      "Pull the center of the rope directly toward your nose.",
+      "As you pull, flare your elbows out and pull your hands apart, rotating your wrists externally (thumbs end up pointing behind you).",
+      "Squeeze your rear shoulders and upper back, then slowly release."
+    ],
+    "formTips": [
+      "Keep your chest proud and do not stick your chin forward to meet the rope.",
+      "Excellent posture corrector and shoulder joint stabilizer."
+    ],
+    "alternatives": [
+      "resistance_band_row",
+      "bird_dog",
+      "chest_supported_row"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0233-ZfyAGhK.gif"
+  },
+  {
+    "id": "dumbbell_bicep_curl",
+    "name": "Dumbbell Bicep Curl",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Biceps"
+    ],
+    "secondaryMuscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness"
+    ],
+    "tags": [
+      "Isolation",
+      "Free Weight",
+      "Upper Body",
+      "Arm"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Wrist Pain",
+      "Tennis elbow"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45
+    },
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0294-NbVPDMW.gif",
+    "instructions": [
+      "Stand tall holding dumbbells at your sides, palms facing forward.",
+      "Keep your elbows locked tight into your ribs.",
+      "Curl the weights upward toward your shoulders by bending your elbows.",
+      "Squeeze your biceps hard at the top.",
+      "Lower the dumbbells slowly to a full extension."
+    ],
+    "formTips": [
+      "Do not swing your torso or raise your elbows forward to cheat the weight.",
+      "Keep your wrists locked straight throughout the curl."
+    ],
+    "alternatives": [
+      "resistance_band_row",
+      "lat_pulldown"
+    ]
+  },
+  {
+    "id": "cable_tricep_pushdown",
+    "name": "Cable Rope Tricep Pushdown",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+    "equipment": [
+      "Cable machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness"
+    ],
+    "tags": [
+      "Isolation",
+      "Machine",
+      "Upper Body",
+      "Arm"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Elbow Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 12"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "10-12",
+      "General Fitness": "12-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45
+    },
+    "instructions": [
+      "Attach a rope attachment to a high pulley of a cable station.",
+      "Grip the rope handles, step back slightly, and lean your chest slightly forward.",
+      "Lock your elbows into your sides; they must stay here.",
+      "Push the rope down towards your thighs, splitting the ends of the rope apart at the bottom.",
+      "Squeeze your triceps, then slowly return to the top, bending only at the elbows."
+    ],
+    "formTips": [
+      "Never let your elbows flare out or move forward.",
+      "Control the weight on the way up; do not let it drop."
+    ],
+    "alternatives": [
+      "push_up",
+      "neutral_dumbbell_press",
+      "incline_push_up"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0200-dU605di.gif"
+  },
+  {
+    "id": "step_up",
+    "name": "Dumbbell Step-Up",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Calves",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Athletic Performance",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Unilateral",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Knee Pain",
+      "Ankle instability"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8 per side",
+      "intermediate": "3 x 10 per side",
+      "advanced": "4 x 12 per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Fat Loss": "12-15",
+      "Athletic Performance": "8-10",
+      "Rehabilitation": "6-8"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 60,
+      "Fat Loss": 45,
+      "Athletic Performance": 90,
+      "Rehabilitation": 90
+    },
+    "instructions": [
+      "Stand holding dumbbells in your hands (or bodyweight only) in front of a flat bench or box.",
+      "Place your right foot fully onto the bench.",
+      "Press through your right heel to lift your body onto the bench, standing up straight.",
+      "Avoid pushing off with your trailing foot; let the lead leg do 100% of the work.",
+      "Step down carefully with your left foot first, then the right."
+    ],
+    "formTips": [
+      "Keep your knee tracking in line with your toe on the working leg.",
+      "Perform all reps on one leg before switching, or alternate as programmed."
+    ],
+    "alternatives": [
+      "box_squat",
+      "bodyweight_squat",
+      "glute_bridge"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0431-aXtJhlg.gif"
+  },
+  {
+    "id": "worlds_greatest_stretch",
+    "name": "World's Greatest Stretch",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Hip Flexors",
+      "Hamstrings",
+      "Thoracic Spine"
+    ],
+    "secondaryMuscles": [
+      "Glutes",
+      "Shoulders",
+      "Chest",
+      "Core"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Full Body",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 5 per side",
+      "intermediate": "3 x 6 per side",
+      "advanced": "3 x 8 per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "6-8 per side",
+      "Mobility Improvement": "8-10 per side",
+      "Rehabilitation": "5 per side"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Start in a high plank position with your hands directly under your shoulders.",
+      "Step your right foot forward to the outside of your right hand, keeping your back leg straight and heel lifted.",
+      "Lift your right hand off the floor and rotate your torso to the right, reaching your right hand straight up to the ceiling.",
+      "Follow your hand with your gaze to stretch your chest, shoulder, and upper back.",
+      "Bring your right hand down, placing your elbow inside your right foot to deepen the hip stretch.",
+      "Return your right hand to the floor and step back to the plank position. Repeat on the left side."
+    ],
+    "formTips": [
+      "Keep your back leg as straight as possible by squeezing your quad.",
+      "Move slowly and synchronize your movements with smooth, deep breaths.",
+      "Don't force the shoulder rotation; let your upper spine rotate naturally."
+    ],
+    "alternatives": [
+      "cat_cow",
+      "childs_pose"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1604-DFGXwZr.gif"
+  },
+  {
+    "id": "cobra_stretch",
+    "name": "Cobra Stretch Hold",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Abdominals",
+      "Hip Flexors"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Lower Back"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Core",
+      "Abdominals"
+    ],
+    "injuryRestrictions": [
+      "Wrist",
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Lower Back Pain",
+      "Herniated disc"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 30s",
+      "intermediate": "3 x 30s",
+      "advanced": "3 x 45s"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30s hold",
+      "Mobility Improvement": "45s hold",
+      "Rehabilitation": "20s hold"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Lie face down on a yoga mat with your legs extended behind you and the tops of your feet flat on the floor.",
+      "Place your hands on the mat directly under your shoulders, elbows tucked close to your body.",
+      "Press down through your hands and gently straighten your arms to lift your chest off the floor.",
+      "Keep your pelvis and thighs pressed firmly into the mat.",
+      "Relax your shoulders down away from your ears and extend your neck gently, gazing forward or slightly up.",
+      "Hold this position, breathing deeply into your abdomen."
+    ],
+    "formTips": [
+      "Do not shrug your shoulders; keep them pulled down and back.",
+      "If your lower back pinches, lower your torso slightly or rest on your forearms instead (Sphinx pose)."
+    ],
+    "alternatives": [
+      "childs_pose",
+      "cat_cow"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1366-01qpYSe.gif"
+  },
+  {
+    "id": "cat_cow",
+    "name": "Cat-Cow Mobility Flow",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Lower Back",
+      "Upper Back",
+      "Neck"
+    ],
+    "secondaryMuscles": [
+      "Core",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Spine",
+      "Back Friendly",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [],
+    "setsByExperience": {
+      "beginner": "2 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "3 x 15"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "10-12",
+      "Mobility Improvement": "12-15",
+      "Rehabilitation": "8-10"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Begin on your hands and knees on a yoga mat, with wrists under shoulders and knees under hips.",
+      "Inhale deeply, dropping your belly towards the mat, lifting your chin and chest, and looking up (Cow pose).",
+      "As you exhale, draw your belly button into your spine, round your back toward the ceiling, and tuck your chin to your chest (Cat pose).",
+      "Continue flowing smoothly between Cat and Cow, synchronizing each movement with a full breath cycle."
+    ],
+    "formTips": [
+      "Distribute weight evenly through your hands; don't dump all your weight into your wrists.",
+      "Keep the movement fluid and avoid jerky motions."
+    ],
+    "alternatives": [
+      "childs_pose",
+      "worlds_greatest_stretch"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1363-JbC2iaV.gif"
+  },
+  {
+    "id": "childs_pose",
+    "name": "Child's Pose Rest Hold",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Lower Back",
+      "Lats",
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Glutes",
+      "Hips",
+      "Ankles"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Back Friendly",
+      "Relaxing",
+      "Rehab Friendly"
+    ],
+    "injuryRestrictions": [
+      "Knee",
+      "Ankle"
+    ],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 45s",
+      "intermediate": "3 x 60s",
+      "advanced": "3 x 90s"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "45s hold",
+      "Mobility Improvement": "60s hold",
+      "Rehabilitation": "30s hold"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Kneel on the floor, bring your big toes to touch, and sit back on your heels.",
+      "Separate your knees about hip-width or slightly wider.",
+      "Exhale and lower your torso forward between your thighs, walking your hands out in front of you.",
+      "Rest your forehead gently on the mat and reach your arms forward, stretching your lats.",
+      "Deepen the stretch by sinking your hips closer to your heels with every exhale."
+    ],
+    "formTips": [
+      "If sitting on your heels is uncomfortable, place a pillow or folded blanket under your hips.",
+      "Breathe slowly and let your back expand laterally with each inhale."
+    ],
+    "alternatives": [
+      "cat_cow",
+      "pigeon_stretch"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/1346-f38OEuO.gif"
+  },
+  {
+    "id": "pigeon_stretch",
+    "name": "Pigeon Stretch (Glute Opener)",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Glutes",
+      "Hip Rotators",
+      "Piriformis"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors",
+      "Lower Back"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Hips",
+      "Glutes"
+    ],
+    "injuryRestrictions": [
+      "Knee",
+      "Hip"
+    ],
+    "contraindications": [
+      "Severe Knee Pain",
+      "Hip impingement"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 30s per side",
+      "intermediate": "3 x 45s per side",
+      "advanced": "3 x 60s per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30s per side",
+      "Mobility Improvement": "45s per side",
+      "Rehabilitation": "20s per side"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "From a push-up or all-fours position, bring your right knee forward and place it near your right wrist.",
+      "Position your right shin parallel to the front of your mat (or angled slightly toward your left hip if tight).",
+      "Slide your left leg back, straightening it completely, with your thigh and foot flat on the floor.",
+      "Keep your hips square. Walk your hands forward and lower your upper body to your forearms or all the way to the mat.",
+      "Hold, taking deep, slow breaths to sink into the glute stretch."
+    ],
+    "formTips": [
+      "Do not roll onto your right hip; keep your hips centered and level.",
+      "Flex your front foot slightly to protect your knee."
+    ],
+    "alternatives": [
+      "childs_pose",
+      "kneeling_hip_flexor_stretch"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2567-QY39eBr.gif"
+  },
+  {
+    "id": "kneeling_hip_flexor_stretch",
+    "name": "Kneeling Hip Flexor Stretch",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Hip Flexors",
+      "Psoas"
+    ],
+    "secondaryMuscles": [
+      "Quads"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Lower Body",
+      "Hips"
+    ],
+    "injuryRestrictions": [
+      "Knee"
+    ],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 30s per side",
+      "intermediate": "3 x 30s per side",
+      "advanced": "3 x 45s per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30s per side",
+      "Mobility Improvement": "45s per side",
+      "Rehabilitation": "20s per side"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Kneel on your left knee on a yoga mat, with your right foot flat on the floor in front of you, creating 90-degree angles with both legs.",
+      "Keep your hands on your hips and make sure your posture is tall and upright.",
+      "Tuck your pelvis under (posterior pelvic tilt) and squeeze your left glute.",
+      "Gently shift your weight slightly forward until you feel a deep stretch in the front of your left hip/thigh.",
+      "Hold the position and breathe deeply."
+    ],
+    "formTips": [
+      "Do not arch your lower back to shift forward; the stretch comes from tucking the pelvis and squeezing the rear glute.",
+      "Place a cushion under your knee if you experience discomfort from the floor."
+    ],
+    "alternatives": [
+      "worlds_greatest_stretch",
+      "pigeon_stretch"
+    ]
+  },
+  {
+    "id": "standing_hamstring_stretch",
+    "name": "Standing Hamstring Stretch",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Calves",
+      "Lower Back"
+    ],
+    "equipment": [
+      "Bodyweight only"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Lower Body",
+      "Hamstrings"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Acute Sciatica"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 30s per side",
+      "intermediate": "3 x 30s per side",
+      "advanced": "3 x 45s per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30s per side",
+      "Mobility Improvement": "45s per side",
+      "Rehabilitation": "20s per side"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Stand upright with feet hip-width apart.",
+      "Extend your right leg slightly forward, resting your heel on the floor with your toes pointing up.",
+      "Bend your left knee slightly and hinge forward at your hips, keeping your spine straight and hands on your left thigh.",
+      "Gently lower your chest toward your right leg until you feel a comfortable stretch along your hamstring.",
+      "Hold, then switch sides."
+    ],
+    "formTips": [
+      "Keep your lower back flat; do not round your spine to reach lower.",
+      "Keep your hips square throughout the stretch."
+    ],
+    "alternatives": [
+      "childs_pose",
+      "seated_hamstring_stretch"
+    ]
+  },
+  {
+    "id": "doorway_chest_stretch",
+    "name": "Doorway Chest & Shoulder Stretch",
+    "category": "Mobility",
+    "primaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Bodyweight only"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Mobility",
+    "recommendedGoals": [
+      "General Fitness",
+      "Mobility Improvement",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Mobility",
+      "Bodyweight",
+      "Stretch",
+      "Upper Body",
+      "Posture"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Shoulder dislocation history"
+    ],
+    "setsByExperience": {
+      "beginner": "2 x 30s",
+      "intermediate": "3 x 30s",
+      "advanced": "3 x 45s"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "30s hold",
+      "Mobility Improvement": "45s hold",
+      "Rehabilitation": "20s hold"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 30,
+      "Mobility Improvement": 30,
+      "Rehabilitation": 45
+    },
+    "instructions": [
+      "Stand in an open doorway.",
+      "Raise your arms up so your elbows are at a 90-degree angle and your forearms rest on the door frame.",
+      "Slowly step forward with one foot until you feel a deep, comfortable stretch across your chest and shoulders.",
+      "Keep your head up, shoulders down, and your core engaged.",
+      "Hold the stretch and focus on deep breathing."
+    ],
+    "formTips": [
+      "Do not lean too far forward; only go until you feel a moderate stretch, never pain.",
+      "Keep your shoulder blades pinched slightly together."
+    ],
+    "alternatives": [
+      "cross_body_shoulder_stretch"
+    ]
+  },
+  {
+    "id": "dumbbell_walking_lunge",
+    "name": "Dumbbell Walking Lunge",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads",
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Calves",
+      "Core"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "Fat Loss",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Lower Body",
+      "Unilateral"
+    ],
+    "injuryRestrictions": [
+      "Knee",
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Severe Knee Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8 per side",
+      "intermediate": "3 x 10 per side",
+      "advanced": "4 x 12 per side"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "6-8 per side",
+      "Muscle Gain": "8-12 per side",
+      "Fat Loss": "12-15 per side",
+      "Athletic Performance": "8-10 per side"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 90,
+      "Muscle Gain": 60,
+      "Fat Loss": 45,
+      "Athletic Performance": 90
+    },
+    "instructions": [
+      "Stand tall holding a dumbbell in each hand at your sides.",
+      "Step forward with your right foot, landing on the heel first, and lower your hips until both knees are bent at about 90 degrees.",
+      "Your back knee should hover just above the floor, and your front knee should track behind your toes.",
+      "Push through your right heel and step forward with your left foot to complete a walking stride and lunge on the left leg.",
+      "Continue walking forward, alternating legs."
+    ],
+    "formTips": [
+      "Keep your torso upright and avoid leaning forward excessively.",
+      "Engage your core to maintain balance and prevent side-to-side leaning."
+    ],
+    "alternatives": [
+      "goblet_squat",
+      "step_up",
+      "bodyweight_squat"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0336-RRWFUcw.gif"
+  },
+  {
+    "id": "dumbbell_lateral_raise",
+    "name": "Dumbbell Lateral Shoulder Raise",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Lateral Deltoids"
+    ],
+    "secondaryMuscles": [
+      "Anterior Deltoids",
+      "Traps"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Isolation",
+      "Free Weight",
+      "Upper Body",
+      "Shoulders"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Rotator cuff impingement"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "12-15",
+      "General Fitness": "12-15",
+      "Athletic Performance": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45,
+      "Athletic Performance": 60
+    },
+    "instructions": [
+      "Stand tall holding dumbbells at your sides, palms facing inward.",
+      "With a slight bend in your elbows, raise your arms out to the sides in a wide arc.",
+      "Lift the weights until your arms are parallel to the floor (shoulder level).",
+      "Squeeze your shoulders at the top, then slowly lower the dumbbells back to the starting position."
+    ],
+    "formTips": [
+      "Do not use momentum or swing your hips to lift the weights.",
+      "Lead with your elbows and keep your shoulders pressed down, avoiding shrugging your neck."
+    ],
+    "alternatives": [
+      "dumbbell_shoulder_press",
+      "face_pull"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0334-DsgkuIt.gif"
+  },
+  {
+    "id": "dumbbell_hammer_curl",
+    "name": "Dumbbell Hammer Curl",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Brachialis",
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness"
+    ],
+    "tags": [
+      "Isolation",
+      "Free Weight",
+      "Upper Body",
+      "Arms"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Wrist Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45
+    },
+    "instructions": [
+      "Stand upright holding dumbbells at your sides with a neutral grip (palms facing each other).",
+      "Keep your elbows locked close to your ribs.",
+      "Curl the weights upward while maintaining the neutral grip until your forearms are almost vertical.",
+      "Squeeze your brachialis hard, then slowly lower the weights to full extension."
+    ],
+    "formTips": [
+      "Do not swing your arms or bend your wrists.",
+      "Keep your posture tall and squeeze your core."
+    ],
+    "alternatives": [
+      "dumbbell_bicep_curl"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0313-slDvUAU.gif"
+  },
+  {
+    "id": "russian_twist",
+    "name": "Bodyweight Russian Twist",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Obliques",
+      "Core"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors"
+    ],
+    "equipment": [
+      "Yoga mat"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Core / Stability",
+    "recommendedGoals": [
+      "General Fitness",
+      "Fat Loss",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Isolation",
+      "Bodyweight",
+      "Core",
+      "Obliques"
+    ],
+    "injuryRestrictions": [
+      "Lower Back"
+    ],
+    "contraindications": [
+      "Herniated disc",
+      "Severe Lower Back Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 12 per side",
+      "intermediate": "3 x 20 per side",
+      "advanced": "4 x 25 per side"
+    },
+    "repRangeByGoal": {
+      "General Fitness": "12-15 per side",
+      "Fat Loss": "15-20 per side",
+      "Athletic Performance": "15-20 per side"
+    },
+    "restSecondsByGoal": {
+      "General Fitness": 45,
+      "Fat Loss": 30,
+      "Athletic Performance": 45
+    },
+    "instructions": [
+      "Sit on your yoga mat with your knees bent and feet flat on the floor.",
+      "Lean back slightly at about a 45-degree angle, keeping your spine straight and core tight.",
+      "Clasp your hands together in front of your chest. For an extra challenge, lift your feet off the floor.",
+      "Rotate your torso slowly to the right, touching your hands to the floor beside your hip.",
+      "Engage your obliques, rotate back through the center, and touch the floor on your left side."
+    ],
+    "formTips": [
+      "Rotate from your torso and ribcage, not just your arms.",
+      "Keep your spine straight; do not slouch or hunch your shoulders."
+    ],
+    "alternatives": [
+      "plank",
+      "dead_bug"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0687-XVDdcoj.gif"
+  },
+  {
+    "id": "arnold_press",
+    "name": "Arnold Dumbbell Press",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "Strength Development",
+      "General Fitness"
+    ],
+    "tags": [
+      "Compound",
+      "Free Weight",
+      "Upper Body",
+      "Shoulders"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Rotator cuff injury"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 8",
+      "intermediate": "3 x 10",
+      "advanced": "4 x 8"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "Strength Development": "6-8",
+      "General Fitness": "10-12"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 90,
+      "Strength Development": 120,
+      "General Fitness": 60
+    },
+    "instructions": [
+      "Sit on an incline or flat bench with back support, holding dumbbells in front of you at chest height with palms facing your chest.",
+      "As you press the dumbbells overhead, rotate your wrists so that your palms face forward at the peak of the movement.",
+      "Lower the weights back down to the starting position, rotating your wrists back so your palms face you again."
+    ],
+    "formTips": [
+      "Keep your back firmly against the bench pad.",
+      "Control the weights on the descent; do not drop them quickly."
+    ],
+    "alternatives": [
+      "dumbbell_overhead_shoulder_press",
+      "single_arm_landmine_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/2137-Xy4jlWA.gif"
+  },
+  {
+    "id": "ab_wheel",
+    "name": "Ab Wheel Rollout",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Core",
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Ab wheel",
+      "Yoga mat"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Home Bodyweight"
+    ],
+    "difficulty": "Advanced",
+    "exerciseType": "Compound",
+    "movementPattern": "Core / Stability",
+    "recommendedGoals": [
+      "Strength Development",
+      "Athletic Performance",
+      "General Fitness"
+    ],
+    "tags": [
+      "Compound",
+      "Core",
+      "Stability",
+      "Advanced"
+    ],
+    "injuryRestrictions": [
+      "Lower Back",
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Severe Lower Back Pain",
+      "Herniated disc"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 5",
+      "intermediate": "3 x 8",
+      "advanced": "4 x 12"
+    },
+    "repRangeByGoal": {
+      "Strength Development": "8-12",
+      "Athletic Performance": "10-15",
+      "General Fitness": "8-10"
+    },
+    "restSecondsByGoal": {
+      "Strength Development": 90,
+      "Athletic Performance": 90,
+      "General Fitness": 60
+    },
+    "instructions": [
+      "Kneel on a yoga mat and place the ab wheel on the floor in front of you.",
+      "Grasp the handles firmly, engage your core, and slowly roll the wheel forward, extending your body into a straight line.",
+      "Go as far as you can while maintaining a flat back, then roll the wheel back by contracting your abs."
+    ],
+    "formTips": [
+      "Do not let your hips sag or your lower back arch.",
+      "Start with a shorter range of motion (rolling towards a wall) until you build strength."
+    ],
+    "alternatives": [
+      "bodyweight_dead_bug",
+      "forearm_plank"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0857-NAgVB3t.gif"
+  },
+  {
+    "id": "bench_dips",
+    "name": "Weighted Bench Dip",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": [
+      "Bench"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Compound",
+    "movementPattern": "Vertical Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Endurance"
+    ],
+    "tags": [
+      "Compound",
+      "Bodyweight",
+      "Upper Body",
+      "Triceps"
+    ],
+    "injuryRestrictions": [
+      "Shoulder",
+      "Wrist"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Shoulder impingement"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Endurance": "15-20"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 75,
+      "General Fitness": 60,
+      "Endurance": 45
+    },
+    "instructions": [
+      "Place a sturdy flat bench behind you, resting your hands on the edge with fingers pointing forward.",
+      "Extend your legs in front of you with your heels on the ground or on another bench.",
+      "Slowly lower your hips by bending your elbows until your upper arms are parallel to the floor, then press back up."
+    ],
+    "formTips": [
+      "Keep your back close to the bench throughout the movement.",
+      "Do not lower yourself too deep to avoid extreme shoulder strain."
+    ],
+    "alternatives": [
+      "cable_rope_tricep_pushdown"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0129-RrLske5.gif"
+  },
+  {
+    "id": "leg_extensions",
+    "name": "Machine Leg Extension",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Quads"
+    ],
+    "secondaryMuscles": [],
+    "equipment": [
+      "Leg extension machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Squat",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Rehabilitation"
+    ],
+    "tags": [
+      "Isolation",
+      "Machine",
+      "Lower Body",
+      "Quads"
+    ],
+    "injuryRestrictions": [
+      "Knee"
+    ],
+    "contraindications": [
+      "Severe Patellar Tendonitis"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 12",
+      "intermediate": "3 x 15",
+      "advanced": "4 x 12"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "10-15",
+      "General Fitness": "12-15",
+      "Rehabilitation": "15-20"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45,
+      "Rehabilitation": 60
+    },
+    "instructions": [
+      "Sit in the leg extension machine and adjust the pad so it rests on top of your lower shins/ankles.",
+      "Grasp the handles on the sides of the seat to anchor your body.",
+      "Extend your legs fully by contracting your quadriceps, holding the peak contraction for a split second.",
+      "Slowly lower the weight back to the starting position."
+    ],
+    "formTips": [
+      "Ensure your back is flat against the backrest.",
+      "Do not use explosive momentum to swing the weight up."
+    ],
+    "alternatives": [
+      "goblet_squat",
+      "leg_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0585-my33uHU.gif"
+  },
+  {
+    "id": "lying_leg_curls",
+    "name": "Lying Machine Leg Curl",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Calves"
+    ],
+    "equipment": [
+      "Lying leg curl machine"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Hinge",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Athletic Performance"
+    ],
+    "tags": [
+      "Isolation",
+      "Machine",
+      "Lower Body",
+      "Hamstrings"
+    ],
+    "injuryRestrictions": [
+      "Knee"
+    ],
+    "contraindications": [
+      "Severe Knee Joint Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15",
+      "Athletic Performance": "8-10"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 75,
+      "General Fitness": 60,
+      "Athletic Performance": 90
+    },
+    "instructions": [
+      "Lie face down on the leg curl machine, positioning the roller pad just below your calf muscles.",
+      "Grasp the handles and keep your torso flat against the bench.",
+      "Curl your legs upward toward your glutes by flexing your hamstrings.",
+      "Slowly return to the starting position under control."
+    ],
+    "formTips": [
+      "Keep your hips pressed firmly against the pad; do not let your lower back arch to help lift the weight.",
+      "Perform the movement slowly, focusing on hamstring tension."
+    ],
+    "alternatives": [
+      "dumbbell_romanian_deadlift",
+      "cable_rope_pull_through"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0586-17lJ1kr.gif"
+  },
+  {
+    "id": "standing_calf_raises",
+    "name": "Standing Calf Raise",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Calves"
+    ],
+    "secondaryMuscles": [],
+    "equipment": [
+      "Calf raise machine",
+      "Yoga mat",
+      "Bench"
+    ],
+    "environment": [
+      "Home Bodyweight",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Commercial Gym",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness",
+      "Endurance"
+    ],
+    "tags": [
+      "Isolation",
+      "Lower Body",
+      "Calves",
+      "Beginner Friendly"
+    ],
+    "injuryRestrictions": [
+      "Ankle"
+    ],
+    "contraindications": [
+      "Severe Achilles tendon pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 15",
+      "intermediate": "3 x 20",
+      "advanced": "4 x 15"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "12-15",
+      "General Fitness": "15-20",
+      "Endurance": "20-25"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 45,
+      "General Fitness": 45,
+      "Endurance": 30
+    },
+    "instructions": [
+      "Stand on the edge of a step or weight plate with your heels hanging off.",
+      "Slowly lower your heels below the level of the step to feel a deep calf stretch.",
+      "Press up on your toes as high as possible, contracting your calves at the peak.",
+      "Lower back down slowly to the starting position."
+    ],
+    "formTips": [
+      "Hold a wall or rail for balance if needed.",
+      "Pause at the bottom stretch and the top contraction to maximize muscle engagement."
+    ],
+    "alternatives": [
+      "leg_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0417-dPmaUaU.gif"
+  },
+  {
+    "id": "dumbbell_flyes",
+    "name": "Dumbbell Chest Fly",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Intermediate",
+    "exerciseType": "Isolation",
+    "movementPattern": "Horizontal Push",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness"
+    ],
+    "tags": [
+      "Isolation",
+      "Free Weight",
+      "Upper Body",
+      "Chest"
+    ],
+    "injuryRestrictions": [
+      "Shoulder"
+    ],
+    "contraindications": [
+      "Severe Shoulder Pain",
+      "Shoulder instability"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 75,
+      "General Fitness": 60
+    },
+    "instructions": [
+      "Lie flat on a bench holding dumbbells above your chest with palms facing each other, arms slightly bent.",
+      "Slowly lower your arms out to the sides in a wide arc until you feel a stretch in your chest.",
+      "Squeeze your chest muscles to pull the dumbbells back up to the starting position along the same arc."
+    ],
+    "formTips": [
+      "Maintain a constant slight bend in your elbows; do not lock them out.",
+      "Only go down as far as is comfortable to avoid shoulder injury."
+    ],
+    "alternatives": [
+      "dumbbell_bench_press",
+      "machine_chest_press"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0308-yz9nUhF.gif"
+  },
+  {
+    "id": "concentration_curl",
+    "name": "Dumbbell Concentration Curl",
+    "category": "Strength",
+    "primaryMuscles": [
+      "Biceps"
+    ],
+    "secondaryMuscles": [
+      "Forearms"
+    ],
+    "equipment": [
+      "Fixed dumbbells",
+      "Adjustable dumbbells",
+      "Bench"
+    ],
+    "environment": [
+      "Commercial Gym",
+      "Home Limited Equipment",
+      "Home Full Equipment",
+      "Limited Gym"
+    ],
+    "difficulty": "Beginner",
+    "exerciseType": "Isolation",
+    "movementPattern": "Accessory / Pull",
+    "recommendedGoals": [
+      "Muscle Gain",
+      "General Fitness"
+    ],
+    "tags": [
+      "Isolation",
+      "Free Weight",
+      "Upper Body",
+      "Arms"
+    ],
+    "injuryRestrictions": [],
+    "contraindications": [
+      "Severe Elbow Pain"
+    ],
+    "setsByExperience": {
+      "beginner": "3 x 10",
+      "intermediate": "3 x 12",
+      "advanced": "4 x 10"
+    },
+    "repRangeByGoal": {
+      "Muscle Gain": "8-12",
+      "General Fitness": "10-15"
+    },
+    "restSecondsByGoal": {
+      "Muscle Gain": 60,
+      "General Fitness": 45
+    },
+    "instructions": [
+      "Sit on a bench, lean forward slightly, and rest the back of your upper arm against the inside of your thigh.",
+      "Hold a dumbbell in your hand with your arm fully extended downward.",
+      "Curl the weight up toward your face by flexing your bicep, keeping your elbow locked against your thigh.",
+      "Slowly lower the weight back down to full extension."
+    ],
+    "formTips": [
+      "Ensure your upper body remains still; do not swing or rock your torso.",
+      "Keep the movement strictly in the elbow joint."
+    ],
+    "alternatives": [
+      "dumbbell_bicep_curl",
+      "dumbbell_hammer_curl"
+    ],
+    "gifUrl": "https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0297-gvsWLQw.gif"
+  }
+]

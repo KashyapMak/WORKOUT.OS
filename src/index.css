@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-artistic-bg: #111111;
+  --color-artistic-ink: #FAF9F6;
+  --color-artistic-accent: #C5FF4A;
+  --color-artistic-line: #2A2A2A;
+  
+  --font-serif: "Georgia", serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+/* Base styles to enforce the theme across the app */
+body {
+  background-color: #111111 !important;
+  color: #FAF9F6 !important;
+  font-family: "Georgia", serif;
+}
+
+/* Custom scrollbars for high-quality polished dark look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5FF4A;
+}

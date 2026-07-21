@@ -1,0 +1,6 @@
+{
+  "name": "WORKOUT.OS",
+  "description": "A comprehensive, 100% client-side personalized workout planner, exercise library, and progress tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
