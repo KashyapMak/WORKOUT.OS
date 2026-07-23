@@ -13,6 +13,7 @@ import {
 } from '../services/storageService';
 import { EXERCISE_DATABASE } from '../data/exercises';
 import { SavedPlanHistory, WorkoutPlan, WorkoutExercise, UserProfile } from '../types/workout';
+import { getScheduleForWeek, generateSingleWeekSchedule } from '../services/workoutGenerator';
 import { 
   Trash2, Copy, FileText, Download, Upload, CheckCircle2, 
   Heart, Edit2, AlertTriangle, ChevronRight, RefreshCw, Layers,
@@ -398,8 +399,16 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
     if (!activeHistory) return null;
     const versionNum = selectedVersionNum || activeHistory.currentVersion;
     const versionObj = activeHistory.versions.find(v => v.version === versionNum);
-    return versionObj ? versionObj.plan : null;
+    return versionObj ? versionObj.plan : (activeHistory.versions[activeHistory.versions.length - 1]?.plan || null);
   }, [activeHistory, selectedVersionNum]);
+
+  // Current selected week's periodized mesocycle schedule data
+  const currentWeekData = React.useMemo(() => {
+    if (!activePlan) return null;
+    return getScheduleForWeek(activePlan, selectedWorkoutWeek);
+  }, [activePlan, selectedWorkoutWeek]);
+
+  const currentSchedule = currentWeekData?.schedule || activePlan?.schedule || [];
 
   const handleRename = () => {
     if (selectedPlanId && renameValue.trim()) {
@@ -414,6 +423,8 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
       const newId = duplicatePlan(selectedPlanId);
       if (newId) {
         setSelectedPlanId(newId);
+        setSelectedVersionNum(1);
+        setActiveTabDay(0);
         loadPlans();
       }
     }
@@ -453,6 +464,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
     if (selectedPlanId && showVersionDeleteConfirm !== null) {
       deletePlanVersion(selectedPlanId, showVersionDeleteConfirm);
       setShowVersionDeleteConfirm(null);
+      setSelectedVersionNum(null);
       loadPlans();
     }
   };
@@ -478,39 +490,84 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
     const altExDetail = EXERCISE_DATABASE.find(e => e.id === altExId);
     if (!altExDetail) return;
 
-    // Create deep copy of schedule
-    const newSchedule = JSON.parse(JSON.stringify(activePlan.schedule));
+    const updatedPlan: WorkoutPlan = JSON.parse(JSON.stringify(activePlan));
     
-    // Replace details
-    const targetEx = newSchedule[dayIdx].exercises[exerciseIdx];
-    
-    // Determine set counts and details
-    let goal = activePlan.userProfile.goals[0] || "General Fitness";
-    let sets = targetEx.sets;
-    let reps = altExDetail.repRangeByGoal[goal] || "10-12";
-    let rest = altExDetail.restSecondsByGoal[goal] || 60;
+    // Ensure weeklySchedules exists for all duration weeks
+    const totalWeeks = (updatedPlan.durationMonths || 1) * 4;
+    if (!updatedPlan.weeklySchedules || updatedPlan.weeklySchedules.length < totalWeeks) {
+      updatedPlan.weeklySchedules = [];
+      const usedMap = new Map<string, number>();
+      for (let w = 1; w <= totalWeeks; w++) {
+        updatedPlan.weeklySchedules.push(generateSingleWeekSchedule(updatedPlan.userProfile, w, usedMap));
+      }
+    }
 
-    newSchedule[dayIdx].exercises[exerciseIdx] = {
-      exerciseId: altExId,
-      name: altExDetail.name,
-      sets,
-      reps,
-      restSeconds: rest,
-      instructions: altExDetail.instructions,
-      formTips: altExDetail.formTips,
-      alternativeIds: altExDetail.alternatives,
-      primaryMuscles: altExDetail.primaryMuscles,
-      notes: `Swapped in-place from "${targetEx.name}"`
-    };
+    const weekSchedule = updatedPlan.weeklySchedules[selectedWorkoutWeek - 1];
+    if (weekSchedule && weekSchedule.schedule[dayIdx]) {
+      const targetEx = weekSchedule.schedule[dayIdx].exercises[exerciseIdx];
+      let goal = updatedPlan.userProfile?.goals?.[0] || "General Fitness";
+      let reps = altExDetail.repRangeByGoal[goal] || "10-12";
+      let rest = altExDetail.restSecondsByGoal[goal] || 60;
 
-    const updatedPlan: WorkoutPlan = {
-      ...activePlan,
-      schedule: newSchedule,
-    };
+      const previousAlternatives = targetEx.alternativeIds || [];
+      const combinedAlternatives = Array.from(new Set([
+        currentExId,
+        ...previousAlternatives,
+        ...(altExDetail.alternatives || [])
+      ])).filter(id => id !== altExId);
+
+      weekSchedule.schedule[dayIdx].exercises[exerciseIdx] = {
+        exerciseId: altExId,
+        name: altExDetail.name,
+        sets: targetEx.sets,
+        reps,
+        restSeconds: rest,
+        instructions: altExDetail.instructions,
+        formTips: altExDetail.formTips,
+        alternativeIds: combinedAlternatives,
+        primaryMuscles: altExDetail.primaryMuscles,
+        notes: `Swapped in-place from "${targetEx.name}"`
+      };
+
+      if (selectedWorkoutWeek === 1) {
+        updatedPlan.schedule[dayIdx].exercises[exerciseIdx] = weekSchedule.schedule[dayIdx].exercises[exerciseIdx];
+      }
+    } else {
+      const targetEx = updatedPlan.schedule[dayIdx].exercises[exerciseIdx];
+      let goal = updatedPlan.userProfile?.goals?.[0] || "General Fitness";
+      let reps = altExDetail.repRangeByGoal[goal] || "10-12";
+      let rest = altExDetail.restSecondsByGoal[goal] || 60;
+
+      const previousAlternatives = targetEx.alternativeIds || [];
+      const combinedAlternatives = Array.from(new Set([
+        currentExId,
+        ...previousAlternatives,
+        ...(altExDetail.alternatives || [])
+      ])).filter(id => id !== altExId);
+
+      updatedPlan.schedule[dayIdx].exercises[exerciseIdx] = {
+        exerciseId: altExId,
+        name: altExDetail.name,
+        sets: targetEx.sets,
+        reps,
+        restSeconds: rest,
+        instructions: altExDetail.instructions,
+        formTips: altExDetail.formTips,
+        alternativeIds: combinedAlternatives,
+        primaryMuscles: altExDetail.primaryMuscles,
+        notes: `Swapped in-place from "${targetEx.name}"`
+      };
+    }
 
     saveWorkoutPlan(updatedPlan);
-    loadPlans();
-    alert(`Successfully swapped exercise to ${altExDetail.name} and saved as a new plan version!`);
+
+    // Refresh plans list and set selected version to newly incremented version
+    const updatedPlansDict = getSavedPlans();
+    setPlans(updatedPlansDict);
+    const updatedHistory = updatedPlansDict[activePlan.id];
+    if (updatedHistory) {
+      setSelectedVersionNum(updatedHistory.currentVersion);
+    }
   };
 
   // Export Plan to JSON file
@@ -1105,7 +1162,11 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                     <select
                       id="sel-workout-week"
                       value={selectedWorkoutWeek}
-                      onChange={(e) => setSelectedWorkoutWeek(parseInt(e.target.value))}
+                      onChange={(e) => {
+                        const newWeek = parseInt(e.target.value);
+                        setSelectedWorkoutWeek(newWeek);
+                        setActiveTabDay(0); // Automatically show default Week Day 1 for selected week
+                      }}
                       className="text-xs px-3 py-1.5 bg-[#161616] border border-[#2A2A2A] rounded-none text-[#C5FF4A] font-mono font-bold focus:outline-none focus:border-[#C5FF4A] cursor-pointer"
                     >
                       {Array.from({ length: (activePlan.durationMonths || 1) * 4 }, (_, i) => (
@@ -1117,7 +1178,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                   <div className="flex items-center gap-2 overflow-x-auto py-1">
                     <span className="text-xs font-bold text-[#FAF9F6]/40 uppercase tracking-wider font-mono mr-2">Target Day:</span>
                     <div className="flex items-center gap-1.5">
-                      {activePlan.schedule.map((day, dIdx) => (
+                      {currentSchedule.map((day, dIdx) => (
                         <button
                           key={dIdx}
                           onClick={() => setActiveTabDay(dIdx)}
@@ -1127,26 +1188,56 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                               : 'text-[#FAF9F6]/60 hover:bg-[#161616] hover:text-[#FAF9F6] border-[#2A2A2A]'
                           }`}
                         >
-                          {day.dayName.split(' ')[0]} ({day.focus})
+                          Day {dIdx + 1}: {day.dayName.split(' ')[0]} ({day.focus})
                         </button>
                       ))}
                     </div>
                   </div>
                 </div>
 
+                {/* Mesocycle Phase Info Banner */}
+                {currentWeekData && (
+                  <div className="bg-[#111111] p-4 border border-[#2A2A2A] rounded-none space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="px-2 py-0.5 bg-[#C5FF4A] text-[#111111] text-[10px] font-mono font-bold uppercase tracking-wider">
+                        Systematic Mesocycle
+                      </span>
+                      <h4 className="text-sm font-bold text-[#FAF9F6] font-serif">
+                        {currentWeekData.phaseName}
+                      </h4>
+                    </div>
+                    <p className="text-xs text-[#FAF9F6]/70 font-serif pt-1 leading-relaxed">
+                      {currentWeekData.phaseDescription}
+                    </p>
+                  </div>
+                )}
+
                 {/* Active Day Content */}
-                {activePlan.schedule[activeTabDay] && (
+                {currentSchedule[activeTabDay] && (
                   <div className="space-y-6 print:space-y-8" id="active-day-workout-view">
                     
                     {/* Day Meta Header */}
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-3 border-b border-[#2A2A2A]">
-                      <div>
+                      <div className="space-y-1">
                         <h3 className="text-lg font-light text-[#FAF9F6] font-serif print:text-xl">
-                          {activePlan.schedule[activeTabDay].dayName} - {activePlan.schedule[activeTabDay].workoutName}
+                          Week {selectedWorkoutWeek} • Day {activeTabDay + 1}: {currentSchedule[activeTabDay].dayName} - {currentSchedule[activeTabDay].workoutName}
                         </h3>
-                        <p className="text-xs text-[#FAF9F6]/50 font-serif">
-                          Focus Structure: {activePlan.schedule[activeTabDay].focus} split routines
-                        </p>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="px-2 py-0.5 bg-[#111111] border border-[#2A2A2A] text-[10px] font-mono font-bold text-[#C5FF4A]">
+                            🗓️ Week {selectedWorkoutWeek} of {(activePlan.durationMonths || 1) * 4}
+                          </span>
+                          <span className="px-2 py-0.5 bg-[#111111] border border-[#2A2A2A] text-[10px] font-mono font-bold text-[#C5FF4A]">
+                            ⏱️ Est. Duration: ~{currentSchedule[activeTabDay].estimatedDurationMinutes || 60} Mins
+                          </span>
+                          {currentSchedule[activeTabDay].armFocus && (
+                            <span className="px-2 py-0.5 bg-[#111111] border border-[#2A2A2A] text-[10px] font-mono font-bold text-[#FAF9F6]/80">
+                              💪 {currentSchedule[activeTabDay].armFocus}
+                            </span>
+                          )}
+                          <span className="text-xs text-[#FAF9F6]/50 font-serif">
+                            Split Focus: {currentSchedule[activeTabDay].focus}
+                          </span>
+                        </div>
                       </div>
 
                       <div className="flex flex-wrap items-center gap-2 print:hidden">
@@ -1160,7 +1251,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
 
                         {/* session checklist completion trigger */}
                         <button
-                          onClick={() => handleCompleteWorkout(activeTabDay, activePlan.schedule[activeTabDay].workoutName)}
+                          onClick={() => handleCompleteWorkout(activeTabDay, currentSchedule[activeTabDay].workoutName)}
                           className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#C5FF4A] hover:bg-[#b0f530] text-[#111111] text-xs font-bold rounded-none cursor-pointer transition-colors font-mono uppercase tracking-wider"
                         >
                           <CheckCircle2 className="h-4 w-4" />
@@ -1173,7 +1264,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                     <div className="space-y-3">
                       <span className="text-xs font-bold text-[#FAF9F6]/40 uppercase tracking-wider block font-mono">Warm-up Sequence</span>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        {activePlan.schedule[activeTabDay].warmUp.map((wStep, idx) => (
+                        {currentSchedule[activeTabDay].warmUp.map((wStep, idx) => (
                           <div key={idx} className="bg-[#111111] p-3 border border-[#2A2A2A] rounded-none">
                             <div className="flex items-start justify-between gap-2 mb-1">
                               <span className="font-bold text-xs text-[#FAF9F6]/90 font-serif">{wStep.name}</span>
@@ -1192,7 +1283,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                       <span className="text-xs font-bold text-[#FAF9F6]/40 uppercase tracking-wider block font-mono">Resistance Exercise Session</span>
                       
                       <div className="space-y-4">
-                        {activePlan.schedule[activeTabDay].exercises.map((ex: WorkoutExercise, exIdx: number) => (
+                        {currentSchedule[activeTabDay].exercises.map((ex: WorkoutExercise, exIdx: number) => (
                           <div key={exIdx} className="bg-[#111111] border border-[#2A2A2A] p-4 rounded-none space-y-4">
                             
                             {/* Exercise stats */}
@@ -1298,17 +1389,17 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                     </div>
 
                     {/* Cardio block if generated */}
-                    {activePlan.schedule[activeTabDay].cardio && (
+                    {currentSchedule[activeTabDay].cardio && (
                       <div className="bg-[#10141a] rounded-none border border-blue-900/40 p-4 space-y-2">
                         <span className="text-xs font-bold text-[#C5FF4A] uppercase tracking-wider block font-mono">Recommended Cardio Session</span>
                         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 text-sm">
                           <div>
-                            <strong className="text-[#FAF9F6] font-serif">{activePlan.schedule[activeTabDay].cardio?.type} Cardio</strong>
-                            <p className="text-xs text-[#FAF9F6]/70 font-serif">{activePlan.schedule[activeTabDay].cardio?.notes}</p>
+                            <strong className="text-[#FAF9F6] font-serif">{currentSchedule[activeTabDay].cardio?.type} Cardio</strong>
+                            <p className="text-xs text-[#FAF9F6]/70 font-serif">{currentSchedule[activeTabDay].cardio?.notes}</p>
                           </div>
                           <div className="bg-[#161616] border border-[#2A2A2A] px-3 py-1.5 rounded-none whitespace-nowrap self-start sm:self-center font-mono">
                             <span className="font-bold text-xs text-[#C5FF4A]">
-                              Duration: {activePlan.schedule[activeTabDay].cardio?.duration} mins ({activePlan.schedule[activeTabDay].cardio?.intensity} Intensity)
+                              Duration: {currentSchedule[activeTabDay].cardio?.duration} mins ({currentSchedule[activeTabDay].cardio?.intensity} Intensity)
                             </span>
                           </div>
                         </div>
@@ -1319,7 +1410,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                     <div className="space-y-3">
                       <span className="text-xs font-bold text-[#FAF9F6]/40 uppercase tracking-wider block font-mono">Cool-down Sequence</span>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        {activePlan.schedule[activeTabDay].coolDown.map((cStep, idx) => (
+                        {currentSchedule[activeTabDay].coolDown.map((cStep, idx) => (
                           <div key={idx} className="bg-[#111111] p-3 border border-[#2A2A2A] rounded-none">
                             <div className="flex items-start justify-between gap-2 mb-1">
                               <span className="font-bold text-xs text-[#FAF9F6]/90 font-serif">{cStep.name}</span>
@@ -1336,7 +1427,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                     {/* Day Progression advice block */}
                     <div className="bg-[#111111] p-4 border border-[#2A2A2A] rounded-none">
                       <span className="text-xs font-bold text-[#FAF9F6]/40 uppercase block tracking-wider mb-1 font-mono">Weekly Progression Strategy</span>
-                      <p className="text-xs text-[#FAF9F6]/70 leading-relaxed font-serif">{activePlan.schedule[activeTabDay].progressionNotes}</p>
+                      <p className="text-xs text-[#FAF9F6]/70 leading-relaxed font-serif">{currentSchedule[activeTabDay].progressionNotes}</p>
                     </div>
 
                   </div>
@@ -1350,7 +1441,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
       )}
 
       {/* Guided Exercise Coach Overlay Modal */}
-      {isGuidedActive && activePlan && activePlan.schedule[activeTabDay] && (
+      {isGuidedActive && activePlan && currentSchedule[activeTabDay] && (
         <div className="fixed inset-0 bg-[#000000]/95 backdrop-blur-md z-50 flex flex-col justify-between p-4 sm:p-6 overflow-y-auto" id="guided-coach-overlay">
           
           {/* Header */}
@@ -1361,11 +1452,11 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                   Week {selectedWorkoutWeek}
                 </span>
                 <span className="text-xs font-mono text-[#FAF9F6]/40 uppercase tracking-widest">
-                  {activePlan.schedule[activeTabDay].dayName}
+                  {currentSchedule[activeTabDay].dayName}
                 </span>
               </div>
               <h2 className="text-xl font-light text-[#FAF9F6] font-serif">
-                {activePlan.schedule[activeTabDay].workoutName}
+                {currentSchedule[activeTabDay].workoutName}
               </h2>
             </div>
 
@@ -1399,10 +1490,10 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
             </span>
             <ChevronRight className="h-3 w-3 text-[#FAF9F6]/20" />
             <span className={`px-2.5 py-1 border transition-colors ${guidedStep === 'resistance' && !isResting ? 'bg-[#C5FF4A] text-[#111111] border-[#C5FF4A]' : guidedStep === 'resistance' && isResting ? 'bg-[#C5FF4A]/25 text-[#C5FF4A] border-[#C5FF4A]/50 animate-pulse' : 'text-[#FAF9F6]/40 border-transparent'}`}>
-              2. Resistance {guidedStep === 'resistance' ? `(${guidedStepIndex + 1}/${activePlan.schedule[activeTabDay].exercises.length})` : ''}
+              2. Resistance {guidedStep === 'resistance' ? `(${guidedStepIndex + 1}/${currentSchedule[activeTabDay].exercises.length})` : ''}
             </span>
             <ChevronRight className="h-3 w-3 text-[#FAF9F6]/20" />
-            {activePlan.schedule[activeTabDay].cardio && (
+            {currentSchedule[activeTabDay].cardio && (
               <>
                 <span className={`px-2.5 py-1 border transition-colors ${guidedStep === 'cardio' ? 'bg-[#C5FF4A] text-[#111111] border-[#C5FF4A]' : 'text-[#FAF9F6]/40 border-transparent'}`}>
                   3. Cardio
@@ -1411,7 +1502,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
               </>
             )}
             <span className={`px-2.5 py-1 border transition-colors ${guidedStep === 'cooldown' ? 'bg-[#C5FF4A] text-[#111111] border-[#C5FF4A]' : 'text-[#FAF9F6]/40 border-transparent'}`}>
-              {activePlan.schedule[activeTabDay].cardio ? '4. Cool-down' : '3. Cool-down'}
+              {currentSchedule[activeTabDay].cardio ? '4. Cool-down' : '3. Cool-down'}
             </span>
           </div>
 
@@ -1449,7 +1540,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                   ) : (
                     <div className="w-full border border-[#2A2A2A] bg-[#161616] overflow-hidden relative min-h-64 flex items-center justify-center">
                       {(() => {
-                        const day = activePlan.schedule[activeTabDay];
+                        const day = currentSchedule[activeTabDay];
                         if (guidedStep === 'resistance') {
                           const ex = day.exercises[guidedStepIndex];
                           const dbEx = EXERCISE_DATABASE.find(e => e.id === ex?.exerciseId);
@@ -1516,7 +1607,7 @@ export default function MyPlans({ onNavigateToWizard }: MyPlansProps) {
                   {/* Phase Details & Instructions */}
                   <div className="space-y-4">
                     {(() => {
-                      const day = activePlan.schedule[activeTabDay];
+                      const day = currentSchedule[activeTabDay];
                       if (guidedStep === 'warmup') {
                         const wStep = day.warmUp[guidedStepIndex];
                         return (

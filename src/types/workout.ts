@@ -108,6 +108,8 @@ export interface DailyWorkout {
   dayName: string; // e.g. "Monday"
   workoutName: string; // e.g. "Upper Body Strength"
   focus: string;
+  armFocus?: string; // e.g. "Biceps Peak & Forearm Grip" vs "Triceps Overhead Extension"
+  estimatedDurationMinutes?: number; // Target ~60 mins
   warmUp: ActivityStep[];
   exercises: WorkoutExercise[];
   cardio?: CardioSession;
@@ -126,6 +128,13 @@ export interface NutritionEstimates {
   waterLiters: number;
 }
 
+export interface WeeklySchedule {
+  weekNumber: number;
+  phaseName: string;
+  phaseDescription: string;
+  schedule: DailyWorkout[];
+}
+
 export interface WorkoutPlan {
   id: string;
   name: string;
@@ -133,6 +142,7 @@ export interface WorkoutPlan {
   createdDate: string;
   userProfile: UserProfile;
   schedule: DailyWorkout[];
+  weeklySchedules?: WeeklySchedule[];
   durationMonths: number;
   warnings: string[];
   nutritionEstimates: NutritionEstimates;
